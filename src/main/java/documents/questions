@@ -1,0 +1,406 @@
+Specilist SDET :
+
+✅ 1. Reproduce the Issue
+
+Launch the application manually in Firefox.
+Compare behavior step‑by‑step with Chrome.
+Capture screenshots, console logs, and network logs where the issue appears.
+
+This gives you a baseline.
+
+✅ 2. Check Browser Console Errors (Critical Step)
+In Firefox Developer Tools:
+
+Console → Errors/Warnings
+
+Look for TypeError, SyntaxError, CORS issues
+Check for unsupported JS functions like innerText, event.path, Promise.any(), etc.
+
+
+Network → Failed requests
+
+4xx/5xx API errors
+Redirect loops
+Cross-domain blocked requests
+
+
+
+Many UI issues arise due to:
+
+JS engine differences
+CSP restrictions
+HTTP/HTTPS mixed content
+Unhandled DOM events incompatible with Firefox
+
+
+✅ 3. Validate Selector/Locator Compatibility
+Some DOM properties behave differently in Firefox.
+For example:
+
+innerText works differently → better to use .getText() or textContent.
+XPath indexing may differ.
+Elements not clickable due to overlay or CSS differences.
+
+In automation:
+
+Check if Selenium throws:
+
+ElementNotInteractable
+ElementClickIntercepted
+ElementNotVisible
+
+
+
+Try:
+Javanew Actions(driver).moveToElement(element).click().perform();Show more lines
+Or use JS click temporarily (only for debugging):
+Java((JavascriptExecutor)driver).executeScript("arguments[0].click();", element);Show more lines
+
+✅ 4. Validate UI Rendering / CSS Differences
+Firefox interprets CSS differently than Chrome.
+Check:
+
+Flexbox rendering
+Grid alignment
+z-index issues
+Vendor prefixes (e.g. -webkit- won’t work in Firefox)
+
+Use Firefox DevTools:
+
+Inspect element → Layout → Check if element is hidden or behind other layers.
+
+
+✅ 5. Browser-Specific JavaScript Behavior
+Firefox may not support:
+
+Certain ECMAScript features (older versions)
+Chrome-specific APIs (e.g., WebKit APIs)
+Unhandled events like event.path
+
+Check:
+
+JS errors in console
+Polyfills missing (e.g., for fetch, Promise, etc.)
+
+If needed, ask dev team to include polyfills:
+JavaScriptimport 'core-js/stable';import 'regenerator-runtime/runtime';Show more lines
+
+✅ 6. Validate Application Config Differences
+Sometimes:
+
+Firefox blocks 3rd-party cookies
+CORS policies behave differently
+Mixed content (HTTP inside HTTPS) blocked
+
+Check:
+
+Authentication redirects
+Cookies (SameSite=None; Secure)
+LocalStorage or sessionStorage issues
+
+
+✅ 7. Validate Selenium WebDriver Compatibility
+Make sure:
+
+You are using the correct Geckodriver version
+Firefox browser version matches driver compatibility
+Selenium version supports Firefox version
+
+Update everything:
+Selenium 4.x
+Geckodriver latest
+Firefox latest
+
+
+✅ 8. Compare Response Codes in Chrome vs Firefox
+Using Network tab:
+
+Check if API responses differ
+Sometimes Firefox blocks insecure endpoints
+Some APIs return different headers in Firefox (CORS)
+
+Example cause:
+Access-Control-Allow-Origin missing in Firefox
+
+
+✅ 9. Try Running the Same Scenario Headless
+This helps isolate rendering issues.
+JavaFirefoxOptions options = new FirefoxOptions();options.setHeadless(true);Show more lines
+If headless works → UI rendering is the problem.
+
+✅ 10. Document the Findings
+Prepare a report for developers:
+Include:
+
+Browser version
+Firefox logs
+Screenshots
+Network failures
+JS errors
+Steps to reproduce
+Comparisons with Chrome behavior
+
+My approach would be to reproduce the issue in Firefox and compare it with Chrome, then check Firefox console logs, network calls, and JS errors to identify any browser‑specific issues. I would validate Selenium locators, CSS rendering, browser configurations, CORS policies, and cookie behavior because these often differ across browsers. I would also verify driver versions (Geckodriver) and ensure cross‑browser compatibility. Finally, I would document my findings clearly for the development team.
+-------------------------------------------------------------
+
+
+⭐ Code Review Best Practices
+
+ Review for Logic & Correctness First
+Focus on whether the code actually does what it’s supposed to do:
+
+Validate business logic
+Check edge cases and error handling
+Ensure the code meets the requirement/acceptance criteria
+Confirm no functionality is broken
+
+👉 Don’t start with naming/style—start with correctness.
+
+2️⃣ Ensure Code Readability & Maintainability
+Readable code reduces long‑term cost:
+
+Clear naming conventions
+Small, meaningful functions
+Avoid deeply nested logic
+Remove unused imports, commented code, dead code
+Use consistent formatting
+
+👉 If a new developer can understand it in one pass, it’s good.
+
+3️⃣ Check for Test Coverage
+As an SDET, this is important:
+
+Verify unit tests, integration tests, and automation tests cover all paths
+Check edge cases & negative scenarios
+Ensure tests are not flaky
+Confirm mocks/stubs are used correctly
+Validate naming + readability of test cases
+
+👉 Code without tests should not be approved.
+
+4️⃣ Verify Code Follows SOLID & Clean Code Principles
+
+Single Responsibility
+Open/Closed
+Liskov Substitution
+Interface Segregation
+Dependency Inversion
+
+Also check:
+
+DRY (Don’t Repeat Yourself)
+KISS (Keep It Simple)
+YAGNI (You Aren’t Gonna Need It)
+
+👉 This ensures scalable, maintainable architecture.
+
+5️⃣ Check Performance & Optimization
+
+Avoid unnecessary loops
+Use streams/collections properly
+Ensure database queries are efficient
+Avoid large objects in memory unnecessarily
+Optimize API calls
+
+👉 Performance issues often hide inside small code changes.
+
+6️⃣ Security Is Critical
+Review for:
+
+SQL injection (use prepared statements)
+XSS/CSRF protection
+Secrets/credentials not in code
+Proper authentication & authorization checks
+Validation on user input
+Safe handling of sensitive data
+
+👉 NEVER allow hardcoded passwords, tokens, or URLs.
+
+7️⃣ Cross‑Browser / Platform Compatibility (UI code)
+For frontend or automation:
+
+Confirm selectors are stable
+Avoid brittle XPath
+Ensure browser compatibility (Chrome, Firefox, Edge)
+Validate waits & synchronization
+Test responsive behavior
+
+
+8️⃣ Review API Contracts Carefully
+
+Validate request/response schema
+Check error codes & messages
+Validate header/auth usage
+Ensure backward compatibility
+Verify idempotency where required
+Versioning is respected
+
+
+9️⃣ Small, Incremental Reviews Only
+Prefer small PRs:
+
+Easier to understand
+Faster to review
+Fewer merge conflicts
+Less chance of introducing bugs
+
+👉 PRs beyond 400–500 lines should be rejected or split.
+
+🔟 Give Constructive & Respectful Feedback
+
+Be clear, specific, and objective
+Avoid personal comments
+Explain the why, not just the what
+Suggest alternatives when pointing out a problem
+Encourage learning, not blaming
+
+👉 Code review is a collaboration, not criticism.
+
+1️⃣1️⃣ Use Checklists
+A standard checklist ensures nothing is missed.
+Example items:
+
+Functionality
+Error handling
+Input validation
+Coding standards
+Tests
+Security risks
+Logging/tracing
+Performance considerations
+
+
+1️⃣2️⃣ Approve Only When All Criteria Are Met
+Do not approve if:
+
+There is insufficient test coverage
+Code is unclear
+Logic is questionable
+Security issues exist
+Requirements are incomplete
+
+“My approach to code review focuses on validating business logic first, ensuring readability and maintainability, checking for test coverage, enforcing clean code principles (SOLID, DRY), verifying security best practices, and ensuring performance optimizations. I also check cross‑browser compatibility for UI code, API contract correctness, and overall architecture impact. I always provide constructive, clear feedback and prefer reviewing small, incremental PRs for effectiveness
+
+
+---------------------------Code REview checkList-----PR-------------------
+ Deep-Dive Checklist by Area
+1) Test Architecture & Patterns
+
+UI: Use Page Objects/Screenplay; pages expose actions, not locators.
+API: Client wrappers for endpoints; schema validation (JSON schema); contract tests.
+Services: Layered tests—unit → integration → contract → E2E; use testcontainers locally.
+Mobile: Page Objects for screens; stable selectors (Accessibility IDs); no coordinate taps.
+
+Red flags: Test does DB manipulation directly; tests know too much about UI structure; duplicate locators.
+
+2) Code Quality & Readability
+
+Style: Linters/formatters configured (e.g., ESLint/Prettier, Black/flake8, Checkstyle).
+Naming: test_should_do_X_when_Y pattern; helper methods named for behavior.
+Structure: Small test methods, clear arrange‑act‑assert sections; no nested logic in assertions.
+DRY: Common flows in helpers/fixtures; no duplicated setup across tests.
+
+Red flags: Magic numbers/timeouts; complicated setup inside test method; excessive conditionals.
+
+3) Stability & Flakiness
+
+Use explicit waits (e.g., WebDriverWait / ExpectedConditions) over sleeps.
+Adopt polling utilities with max timeout; exponential backoff for eventual consistency.
+Idempotent retries only where safe (e.g., GET with eventual consistency).
+Randomized data seeded for determinism; control time with clock abstraction.
+
+Red flags: Thread.sleep(5000); order-dependent tests; shared state across tests.
+
+4) Assertions & Test Value
+
+Assertions check business outcomes, not just superficial states.
+Verify side effects (DB rows, emitted events, emails) via test doubles or observability.
+Avoid brittle UI assertions (exact text blocks); prefer semantic checks (roles/labels/states).
+Use soft assertions where multiple validations in one flow, but fail fast for critical ones.
+
+Red flags: Only HTTP 200 asserted; no negative/edge tests; asserts on transient UI text.
+
+5) Test Data, Fixtures & Teardown
+
+Isolation: Each test owns its data (create → use → delete); avoid relying on preseeded data.
+Factories/Builders: Generate domain objects; avoid massive JSON inline blocks.
+Teardown: Guaranteed cleanup (afterEach/afterAll); handles failures.
+Idempotency: Re‑run safety; no cumulative pollution.
+
+Red flags: Shared “user123” across suite; brittle UUIDs copied; missing cleanup leading to leaks.
+
+6) CI/CD Integration
+
+Fast feedback: Unit/contract tests on PR; E2E nightly or gated.
+Parallelism: Test sharding; containerized runners; proper resource limits.
+Artifacts: Upload screenshots, logs, HAR files, videos on failure.
+Flake tracking: Quarantine tag + dashboard; auto-retry policy documented.
+
+Red flags: Long-running PR builds (>15 min) without parallelization; missing artifacts.
+
+7) Security & Secrets
+
+Secrets in env or secret manager; never in code or test logs.
+Sanitize logs/reports; redact tokens and personal data.
+Use least privilege test credentials; rotate periodically.
+Static analysis (SAST) and dependency checks (SCA) integrated.
+
+Red flags: Bearer abc123 in source; screenshots showing PII; committing .env.
+
+8) Performance & Scalability
+
+For API/load tests: define SLAs; run smoke perf in CI, deep perf in pipeline stage.
+Page load and core action timings captured; thresholds enforced.
+Avoid N+1 waits or repeated heavy setups; cache where acceptable in test scope.
+
+Red flags: Test times ballooning; hidden loops with network calls.
+
+9) Accessibility (UI)
+
+Use accessibility IDs/selectors; basic a11y checks (contrast, roles, labels).
+Integrate linters (axe-core/pa11y) for critical flows where feasible.
+
+Red flags: Reliance on XPath by position; missing labels/roles.
+
+10) Reporting & Observability
+
+Consistent report format (JUnit/Allure/Extent); attach context (screenshot/video/log).
+Failure messages include enough hints to reproduce.
+Structured logs (JSON) and correlation IDs across layers where feasible.
+
+Red flags: “AssertionError: expected true to be true”; no artifacts on failure.
+
+checkList--
+
+## Summary
+- What does this PR change?
+- Why is it needed?
+
+## Test Coverage
+- New tests:
+- Updated tests:
+- Critical paths covered:
+- Negative/edge cases:
+
+## Reliability
+- Explicit waits used?
+- Flakiness mitigations:
+- Parallel-safe?
+
+## Data & Environments
+- Test data strategy:
+- Teardown details:
+- Env compatibility (dev/stage/prod):
+
+## Security
+- Secrets externalized?
+- Logs redacted?
+
+## CI/Artifacts
+- Reports attached:
+- Screenshots/videos/logs:
+- Estimated runtime:
+
+## Risks & Rollback
+- Known risks:
+- Rollback plan:

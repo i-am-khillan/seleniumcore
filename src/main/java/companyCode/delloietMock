@@ -1,0 +1,28 @@
+SDET 1
+
+1. introduce your self 
+2. how to store the data and how to retrive the data  --
+
+
+3.API :
+
+String str="API uRL "  and give me response code 
+
+4. in API Json we need you give me the invoiceId based on curterId
+
+{
+ custorId: 1333
+ 	incoiveId: 3444
+ custorId: 1333
+ 	incoiveId: 3444
+
+}
+give me custorId and ints incoivdId
+
+5.String  == and equalsTo()  where we can use it and
+6. String s=afdaf@@#4sadf234(*sS  remove the special character
+7. how to resolve the conflict using git command 
+8.
+
+
+
