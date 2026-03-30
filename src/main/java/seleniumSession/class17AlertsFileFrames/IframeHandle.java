@@ -26,6 +26,7 @@ public class IframeHandle {
 		
 		//move to main page
 		driver.switchTo().defaultContent();
+		driver.switchTo().parentFrame();
 		
 		
 		// sel 4.x

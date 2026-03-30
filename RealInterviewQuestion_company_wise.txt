@@ -1,0 +1,1151 @@
+
+
+class ClassName{
+
+
+main(){
+
+
+WebDriver driver=new ChromeDriver();
+
+driver.get("URL");
+List<WebElement> links=driver.findElements(By.xpath("//a");
+
+List<String> lists=new ArrayList<>();
+
+for(WebElement e: links){
+
+ String url =e.getAttribute("href");
+  if(url.isEmpty() || url!=null){
+  
+  continue;}
+  
+  HttpURLConnection con=(HttpURLConnection) new URL(url).openConnection();
+  
+  con.connect
+  
+  if(con.getStatusCode()!=200){
+	list.add(url);
+   syso("Links Are broken ")
+  
+  }
+  else{
+  Syso("links are not broken");
+  }
+
+
+
+}
+26 Feb 2025
+
+1. introduce your self
+2. Daily activities and responsibility
+3 which automation tool you have worked
+4. write the code for automation to select the google search and type DEL and select on of them
+5. how to rerun the failed test case
+6. how to configure jenkins for Ci/CD
+7.
+-------------------------------------------------------
+
+11 Nov 2024 , TP1 , Interview SDET L1
+Feedback :- 1 very precise and do not mvoe whiel interview
+
+1. introduce yourself , key roles and responsibilities
+2. what is diff Array and ArrayList
+3. What is diff bt  HasSet and HasMap
+5.write a program for input string "Automation Programming" Output String "xxtxmxtxxn Prxgrxmmxng".
+6.//find out the statement and print it having maximum words  in the given paragraph.
+ // String paragraph = "This is the first statement. Here is another, which is slightly longer. Finally, this is the longest statement in terms of word count in this paragraph.";
+7. Can we override the constructor in java and why / Java support multiple inheritance
+8. can we overload the constructor in java
+9. what is diff super and this key word
+
+
+Selenium :
+1.How do you select particular submenu option in Menu  using selenium.
+2. Hierarchy of Selenium interface
+
+BDD :
+1.How we can share the two step difinations
+2. what is diff b/w datatable and Example Data table
+
+RestAssured :
+
+1.Authentication /Authorization
+2. Create emp class and pass that data to create new emp and give the status code for success
+Creating getter and setter using post class
+3. status code
+4.How to parse the complex json.
+5.How to handle lengthy Json responses.
+
+Git Commond :
+
+1.what is diff bt git fetch and git pull
+2.How to resolve the code conflicts
+
+CI/CD :
+1. do you have exp . CI /CD.
+2. How to configure the project into it
+---------------------------------------------------
+HCL TP1 SDET
+
+1.what is difference b/w robot and actions class
+2. what is chromeoptions and desiredCapabilities and how to use it
+3. when ever we will click on link and pop up  is displayed then how to handle it
+4.webdriver implement classes
+5. want to drag a value and draw the line how to handle and automate it
+6. click on link then windows are open then I want to switch to index 21 windows and click on it --- hit store in set and convert sort to index (arraylist concept
+7.
+Java
+Quest 8 : solve the program
+int[] arr1 = { 1, 0, 3, 0, 9, 4, 6, 8, 0, 0, 7, 5 };
+out : {1,3,4 ....  ,0 ,0,0 } Write the program to shift all zero at the end
+9. Panlindrom string and number
+10. comparable and comparator interfaces
+11 . Where we can use method overloading in selenium
+
+Cucumber :
+diff b/w background and hooks
+datatable as List -- how to use as List
+New things
+how to push the code into the git repository
+how to connect database using selenium
+--------------------------------------------
+Interview Question and Ans -----date 16DEC 2024
+
+1. Introduce yourself
+2. Sort the array with out using the inbuilt function
+3. find the xpath of https://www.selenium.dev/ --about to documentation
+4.how to get the cookies session id using api
+------------------------------------------------------
+Round 1 – Coding
+ ✅ Print the 2nd smallest element in an array
+ ✅ Print the 2nd largest element in an array
+
+Round 2 – Technical Discussion
+
+ ✨Java & OOPs
+ ✅ Current roles & responsibilities
+ ✅ OOPs – Abstraction, Encapsulation, Polymorphism
+ ✅ Exception hierarchy & handling NullPointerException
+ ✅ Compile-time vs Run-time polymorphism (examples)
+ ✅ Interface – object creation & method calls
+ ✅ Static methods – overloading vs overriding
+ ✅ StringBuilder vs StringBuffer
+ ✅ ArrayList vs LinkedList
+ ✅ Map, Set, List – key differences
+ ✅ Singleton class – definition & use cases
+
+ ✨Selenium & Automation
+ ✅ XPath for Google Search button
+ ✅ Enter text, scroll to element, take screenshot of web element
+ ✅ Handle Frames, Alerts, Child Windows, Dropdown values
+ ✅ JavaScriptExecutor – scroll, click, set values, fetch text
+ ✅ Synchronization – Implicit, Explicit, Fluent waits
+
+ ✨Cucumber & TestNG
+ ✅ Options in @CucumberOptions
+ ✅ Run a scenario multiple times
+ ✅ Pre/Post activities across scenarios
+ ✅ Re-execute failed tests
+ ✅ Role of Test Runner
+ ✅ Cross-browser testing
+
+🔹 Round 3 – Managerial + Coding
+ ✅ Discussion on roles & responsibilities
+ ✅ Ability to work as Individual Contributor
+ ✅ Git conflict resolution
+ ✅ Coding – Given {1,3,3,4,5,6,6,7,8,9,9}, print all indices of search element; if not found → display element not found
+ ✅ Project-specific Q&A
+
+✨ Key Focus Areas
+ ✅ Java OOPs & Collections
+ ✅ Exception Handling
+ ✅ Selenium WebDriver (frames, alerts, windows, dropdowns, waits)
+ ✅ Cucumber & TestNG
+ ✅ Git & Project discussions
+ 
+ --------------------------------------------
+ --------------------------------------------------------------------------
+ Introduction L1
+1. introduce yourself and tell me about yourself
+2. how to handle the data driven test case
+3. how to load the data into system using dataProvider
+4. APIs and frontend
+5. how to handle APIs and selenium both together
+6. what is your strength and weakness
+7.
+
+Company L2, 5 Dec 2024
+1. Introduce yourself
+2. Explain your automation framework
+3. how often your script got executed
+4. if you found the bug on ci/cd pipe line what is your mitigation plan
+5. Most preferable locator what is locator strategy
+6. What is your success ratio of test case
+7. What is automation framework guideline
+8. Have you faced any challenge while designing or automating the test case
+9. have you faced any challenge while designing the framework
+10.How many test case are there for the project
+11.Jmeter reports using and how to analyse the report
+12. Have you written any script for Jmeter
+13.Have you encounter the timeout issue.
+14.
+-------------------------------------------
+--------------------------------------------------------------------------
+SDET L2 16 Sept 2024
+
+1 introduce your self
+2. write the program to swap the character in paris
+input mumbai
+output umbmia
+input khillan
+output hklialn
+3. write th program to remove the prefixed and keep sufix zero
+a=0000012345 out : 12345
+b=0000045670 out : 45670
+4. Write the java program to remove the duplicate
+khillan ====khilan
+sandeep === sandep
+5.do you know the collections and where you used in framework
+6. do you git stask , what is rebase, different git pull and git fetch
+7.What is Ymail
+8. Do you know the Jenkins
+9. Jenkins
+10. what is parallel testing
+12. what is OOPs concepts in java
+13. what is overriding or run time binding
+14. what is exception handling and example of unchecked
+15.do you know the regular express
+16.git
+-----------------------------------------
+--------------------------------------------------------------------------
+SDET R1 Company =Deloitte
+
+1.Introduce your self & Daily activities
+2.Explain the Framework on top level (3mints)
+3.reverse the word with first character is Caplital ,input ="khillan verma" output=amreV, nallihK
+4.find the each character occurances of String ="khillan verma"
+5.find the xpath of flipkart search icon.
+-------------------------------------------------
+--------------------------------------------------------------------------
+TelUS Company
+1 Round interview Question & answer
+Introduce your self
+Find the valid links on the webPage ()
+Find the xpath on drop down on telus company{}
+Solve the below java programss
+
+find the valid links on the webpage (telus)
+
+HttpConnection connection=new HttpConnection();
+connection.connect()
+
+
+if(statusCode ==200) valid links
+
+Xpath :
+
+find the xpath of dropdown links
+//
+Write a function to find the longest common prefix string amongst an array of strings.
+if there is no common prefix, return an empty string
+
+Input: strs = ["flower","flow","flight"]
+Output: "fl"
+
+
+Given two strings s and t, return true if s is a subsequence of t, or false otherwise.
+A subsequence of a string is a new string that is formed from the original string by deleting some (can be none) of the characters without disturbing the relative positions of the remaining characters. (i.e., "ace" is a subsequence of "abcde" while "aec" is not).
+
+
+ace  ----subsequnece of
+
+s1 =abcde
+{a , b, c, d , c} -- i
+
+s2="ace"  -- j
+
+if(charAt(i) ==charAt(j)) return true
+
+for(int i=0;i<s1.length();i++){
+char ch1=s1.charAt(i);
+
+	for(int j=0;j<s2.length();j++){
+		if(ch1==s2.charAt(j) return true
+ 		else false
+		}
+
+}
+-------------------------------------
+--------------------------------------------------------------------------
+Company Name Wipro 1. 2024
+--------------------------
+First 1 Round
+Interview question & answers
+Introduce yourself
+Reverse the word like String s=”khillan verma”;  o/p nallihk amrev
+Which is more preferable in below statement - 1  String s= “khillan”, String s1=new String(“khillan”)”;
+More preferable
+Tell me daily activity for api automation & daily to day work
+What is serialization
+What is pojo
+Tell me about th selenium automation framework
+Validation & verification
+Data provider
+Explain the data try & catch block
+Where you can use the map in the your project
+Tell me about frequently use the selenium locator
+Take the screenshot & JavascriptExecutor
+Explain the git command.
+TestNG annotations
+How to add the library for jdbc to the project.
+Give me an important cucumber file.
+How to check the selenium alert and accept that alert
+Please write the locator for button  entire syntax
+Mostly used annotations
+Tell me about Jenkins
+What is different git fetch and git pull
+How to get the code from gitlab & modify and push the code to gitlab.
+
+Wipro L2
+----------------------------
+--------------------------------------------------------------------------
+Given String String =”khillan verma is lived in noida”; get find the word count using hashMap
+Store the value in the arrayList  and give me the even count using the iterator
+implicitWait and explicit wait in the both are using together is best approach
+DataType in java and give the example ans
+
+static int x=10;
+int y=20;
+public void car(){
+
+
+public static void main(String[] args) {
+   Engine a=new Engine();
+   a.x=999;
+   a.y=990;
+   Engine a1=new Engine();
+   System.out.println(a1.x+"__________"+a1.y);//what is output of this  //10,20
+}
+
+
+
+Find the xpath of given (makemyTrip) departure 17 sept xpath.//*[@id='root']/descendant::div[@aria-label='Tue Sep 17 2024']/child::div[1]/p[1]
+//*[contains(@aria-label,'Nov 30 2024')] //dynamic xpath
+When you start your day, then what you are going to do. With git commands
+What your mean by authentication
+Write the code for processing the post request.
+What is CucumberOptions importance
+Explain the your Framework
+Introduce yourself
+Where you have been used OOPs concept in your project
+Inheritances with nuance cases
+
+
+Car c=new Car(); // Parent class
+c.car();
+// c.engine(); // Not allowed for child class
+Car e=new Engine();
+e.car();
+//e.engine();// Not allowed for child class
+
+What is checked and unchecked exception in java.
+Can we override private / static /abstract method in java
+
+
+Wipro Noida ----Greater Noida 30 August 2024
+--------------------------------------------
+--------------------------------------------------------------------------
+Introduce your self, Project , and roles and responsibilities
+Reverse the string
+find the occurrence of given String
+Challenge of automation you have faced
+Find the xpath of make my trip https://www.makemytrip.com/  --- xpath dynamic xpath (//[contains(@id,'lst-ib')]”))
+APIs - http method 401 403 http status code and response methods
+post/get/delete
+difference between soap & rest methods
+SQL -- question
+bug life cycle
+explain the low severity and high priority
+cucumber options
+how to run the parallel testing in cucumbers
+what is glue
+-------------------------------------------------
+--------------------------------------------------------------------------
+
+SDET -L2 Wipro -- selected :12 Sept 2024
+introduce yourself. and Project details.
+what is soap and how its different from Rest Assured
+Rest assured Response method you have used in your project
+what is enum in java and how its works
+Tools for rest assured you have used - rest assured and postman
+UpCasting and downCasting with example in java.
+what is inheritance in java and explain with program
+write a program for reverse the String input=I love Programming //output Programming Love I
+write what is selenium drag& drop , right click , getWindowHandles,
+there is 3 window I just want to get the text of window 2 , How to handle
+Explain Java overriding with example
+what is different bt finally , finalized , final
+why String is immutable
+why java is not supported multiple inheritance in java
+what is action class
+what is diamond problem
+what is selenium testng annotation
+how to run the parallel testing using BDD -with same or different data set
+Scroll down an up in selenium
+how to perform right click in selenium
+isSelected return the true and false.
+Exception in Selenium
+POM selenium framework-- explain in details
+Parallel testing in
+Selenium annotation used by you.
+What is diamond problem in java -- (multiple inheritance)
+--------------------------------------------------------------------------
+Wipro Hr Interview L3 13 Sept 2024
+1. Introduce your self
+2. Tell me your skill
+3. Did you have gap in academic or professional
+4. what is your expectation in term of compansion
+5.
+-------------------------------------------------
+--------------------------------------------------------------------------
+Glider test online
+1.API automation Test -- Response and request related , crud operation APIs
+2. Selenium question , create task 1 , marked as completed , delete the task uing the selenium with base class
+https://todomvc4tasj.herokuapp.com/
+3.Code Java -- Inharitance ( single ,multi level. heibrish level) diagram
+4. download zar file , save desired location , using selenium Firefox capabilities
+5. write the xpath of " the element has an id that change everytime when page loaded"
+6.Appium multi-headed start class
+7.Data Base related question  good developer level question - top 5 department ,
+8. Algorithm -- Matrix which have BSF, DFS ,Binary search , linear search
+------------------------------------------------------------------------
+Coding questions:
+1. find the last repeating character in the string
+2. reverse the string of words by spliting it where we find special character and ensure special character possition s intact
+3. how to find peak( element that is greater than all its sides) of a two dimensinal array
+
+testing concepts
+1. what test cases you can write for a two lifts that operate in sync for 4 floor building
+2. what test cases we can write if this code is given by a developer
+3.how to handle broken links
+4. how to handle calenders scenarios
+5.how to handle dynamic tables
+6. how will you automate catcha
+
+Java & OOps concepts
+1. SQL OOps concept, live coding java collections , primitive data types , Garbage collection
+2.what is diff b/w singleton and static
+3. some basic java question : static , diff interface/abstract,finala ,finallize, finally. array and linkedLIst,hash map and hashtable
+4. mutable and immutable concept in java
+5. Exceptions in java
+6.can we create instance of interface
+7. how to convert array to arraylist
+
+selenium /Cucumber.Testng
+1. how can you find duplicate options in dropdown(selenium
+2.Exception in selenium
+3.how to perform mouse operations
+4.how cucumber will know definition of specific step should present in the step definition file.
+5.how can you run specific test case multiple times in Testng
+6.sql query to find position of o'o' in 'John' in firstName of employe table and concert in into upper case
+7.write the script to track one process in the system and kill it if it hangs for some particular period of times.
+
+---------------------------------
+--------------------------------------------------------------------------
+SDET :
+-------------------------------------
+LTIMindTree
+1. introduce yourself 
+2. do you know the jenkins stage
+3. what is your code -review process
+4. explain your framework
+5. do you know the diff type of auth
+6. write the xpath of i am feel lucky for google.com
+7.what is different finally or final or finalized()
+8. write the post request synctax
+9. have you used singleton pattern in your framework
+10. what is staleReferenceException and how to resolved it
+
+SDET 2:
+LTIMindTree
+1.Explain the roles and responsibilities
+2.how to do installation and test cleanup for appiums 
+3. how to do the set up of ci/cd for appiium
+4. test logout for playwright and cleanup the session
+5. default methods in interface
+6. would you interface over abstract class
+7. how to validate resposne time , what is it and how to meatured
+8.write the program for anagram ["ate","ten","eat","net"]
+9.print the all select option element in same order as displayed
+10. how would do the vulnability scanning in APIs
+11. how to verify the upload file progress using the selenium java
+12.how to upload the file 
+13.	
+---------------------------------------------
+--------------------------------------------------------------------------
+
+4. write the code for automation to select the google search and type DEL and select on of them
+'write a program for reverse the String input=I love Programming //output Programming Love I
+Reverse the string
+find the occurrence of given String
+iven String String =”khillan verma is lived in noida”; get find the word count using hashMap
+Store the value in the arrayList  and give me the even count using the iterator
+Write a function to find the longest common prefix string amongst an array of strings.
+if there is no common prefix, return an empty string
+	
+Input: strs = ["flower","flow","flight"]
+Output: "fl"
+
+3.reverse the word with first character is Caplital ,input ="khillan verma" output=amreV, nallihK
+4.find the each character occurances of String ="khillan verma"
+5.find the xpath of flipkart search icon. ://button//*[name()='svg']
+int[] arr1 = { 1, 0, 3, 0, 9, 4, 6, 8, 0, 0, 7, 5 };
+out : {1,3,4 ....  ,0 ,0,0 } Write the program to shift all zero at the end
+9. Panlindrom string and number
+4. write the code for automation to select the google search and type DEL and select on of them
+
+-------------------------------------------------
+--------------------------------------------------------------------------
+
+DXC L1 2 Feb 2026
+
+1. can you tell me your expierence in your previous project and currect project
+2.can you tell me the biggest one challenge you faced and provide the solutions
+3.give me broken links 
+4. how to handle frames
+5.
+1. introduce yourself and project /technology you have used and key responsibilities
+2. Explain the framework
+3.have you used docker in your project
+4.Explain the agile processess
+5.how your project is run or frequency of the project
+6.how parallel Test execute perform in your project
+7. Retry logic in your project.
+8. how to manage your api payload & how to validate the api.
+9.how to select value in dropdown option and out put should be in alphabatic order
+10.write the program  to get the duplicate word and its account 
+String s="i am khillan verma and verma your last name and khillan is first name.
+out : i =1, am =1,khillan=2, verma=2,and =2 likes that.
+
+
+DXC 2 Round  05 Feb 2026:
+
+1. tell me you quick things about the automation related to previous project and current project
+2. what is tracebilities matric in JIRa --- XRay plugins for RTM
+3. how to handle the frames 
+4. give me the broken links count in your ORG.
+5. 
+
+notes :
+https://app.box.com/notes/1380968082445?s=z1jscs402bmqadljajx0fmidnij8s6cd
+
+
+//https://app.box.com/notes/1380968082445?s=z1jscs402bmqadljajx0fmidnij8s6cd
+
+//https://app.box.com/folder/238444602043
+//https://app.box.com/file/1516555809225  --currently working on it
+//https://app.box.com/file/1484672523786
+
+//https://www.udemy.com/home/my-courses/learning/
+//https://www.udemy.com/course/rest-api-automation-testing-rest-assured/learn/lecture/41553154#overview
+
+//https://www.youtube.com/watch?v=hlGoQC332VM  --data base 
+
+--------------------------------------------------------------------------
+infosys L2 Round :
+1. introduce your self and explain the project .previous and current project
+2.in payment API what you have validated 
+3. how to make sure you are validating the e2e flow from payment api.
+4. how you can run parellel test using testng parameter
+5. payment API validation point: 
+6. what is acquirer and issuer .
+7.
+
+
+infosys L3 Round : coding & technical:
+
+1. introduce yourself
+2. tell me your project details
+3. Main diff b/w list and set
+4. what is your method overloading and overriding
+5. String s="null";
+		String str1="abc";
+		System.out.println(s.equals("null") |str1.equals("abc"));
+		
+		
+6. give me correct or it will run the program
+
+public class Programming Test{
+static void main(String[10] arg{
+
+String s="abc";
+
+System.out.println(s);
+
+Question : can we override this method
+Question : can we overload this method
+Question: do some modification and tell me the version program.
+}
+}		
+7.how many way we can overload the main method.
+8.what is merchant or acquirer /issuer 
+9.how we can parse the response using API.
+10. what type of validation you can perform over the APIs.
+11. how your test case get executed 
+12. how to decide which test case is automated or which not
+13. reverse the word  input = selenium is automation tool ,output = muineles si noitamotua loot
+14. remove the duplicate input= java python java python .net python  ,output=java pthon .net
+15.
+--------------------------------------------------------------------------
+Cognizant: L1;
+1. introduce yourself and share your prefessinal backgroud
+2. Move all the zero at the end
+3.write the program to rotate an array bu K positions 
+4. diff string builder and StringBuffer
+5. Overview of tools and technologies you have worked
+6. explain the desiredCapabilities in selenium
+7. explain the purpose of testng Data provided with example
+8. Explain the purpose of the root class in selenium
+9. Explain the finally /finalize /final 
+
+--------------------------------------------------------------------------
+Question: 
+1. Serialization and deserializations
+2. how do you handle collections in api
+3. diff put and patch
+4.how do you handle pagination in API testing
+5. what is pojo class
+6. how to handle bearer token
+7. how do you design an aPI automation framework
+8. how do you perform nagative testing in api automation and paginations
+9. how do you validate error messages
+10. how do you perform data-driven api testing
+11. how do you handle dynamic values
+12. how do you validate response headers
+13.
+--------------------------------------------------------------------------
+
+Iris interview : L1
+
+1. introduce yourself
+2. push or move to zero at the end.
+3. what is diff list & set
+4. waht is exception in selenium
+5. diff throw and throws
+6. diff  serialization and deserializations
+7. WaitWEbDriver driver=new WaitWEbDriver() syntax 
+8. Iteration in java
+9. how to handle window in selenium with collection 
+10. parrellel executions using testng
+11. 401 and 403 status code
+12. 500 status code 
+13 .can we have API with out authentication  if yes than why and vice versa
+14. button is disable & enable for few second than again disappeared
+15. window handles 
+16.
+---------------------------------------------------
+Om Logistics : l2
+1. introduction 
+2. Thread counter 
+3. jdbc connection
+4. ssl exception in selenium 
+5. Runnable and callable 
+6. Selenium Version s-contributions and major changes 
+7. Strig immutable Class  and create immutable class in java
+8. How has map internally working --- 
+9.
+
+
+------------------------------------------------------------------
+DevLaps:R1 :
+1.what is normalization
+2.what is sub query
+3.
+
+
+https://www.youtube.com/watch?v=mafkhtals0o   : Learning Java8+ concepts
+https://app.box.com/notes/1380968082445?s=z1jscs402bmqadljajx0fmidnij8s6cd  -- box -note 
+----------------------------------------------------
+coforge R1
+
+1. introduce yourself
+2.
+
+
+-------------------------------------------------
+Iris L2 
+
+1. introduction 
+2. role and responsibilities
+3. have you used in framework method overloading and method overriding 
+4. selenium latest featured used in framework'
+5. diff Action and Actions 
+6. Handle dropdown without using select class
+7.private contructor 
+8. what do you mean by private constructor
+9. what is singleton and why we can singleton 
+10. Parallel execution and what do you mean thraed-count
+11. what is multithreading 
+12. what you mean thread.
+13
+intput arr[]=[10,5,2,7,1,-10] k=15 and output 6 , subArray with sum=15 are [5,2,7,1] ,[10,5] and [10,5,2,7,1,-10] and the length of the longest subarray with a sum of 15 is 6
+
+
+
+INfosys L1 : 
+1. introduce yourself
+2. what is diff b/w method loading and method overriding
+3. what is parameterization 
+4. what is parallel execution
+5. what is data table and scenario outline 
+6. what is API chaining 
+7. what is locator used in automation 
+8. 
+input arr[]=[1,2,3,4,5,6,7,8] , k=3 out [3,2,1,6,5,4,8,7] in java lanagauge
+------------------------------------------
+submit_interivew_questions
+
+Candidate Background & Experience
+•	Can you walk us through your education and professional background?
+•	Which domains have you worked in?
+o	Follow-up:
+	What automation tools and frameworks did you use in each organization?
+	Have you led any initiatives (framework creation, accessibility, mentoring)?
+________________________________________
+2️⃣ Test Management & QA Fundamentals
+Test Strategy vs Test Plan
+•	What is the difference between a Test Strategy and a Test Plan?
+•	Is Test Strategy always a generic document?
+o	Follow-up:
+	Have you ever created a project-specific test strategy?
+	In what scenarios would you customize it?
+Backend Change with No UI Change
+•	If backend authentication changes but UI remains same, how would you design test cases?
+o	Follow-up:
+	What layers would you test (API, DB, UI)?
+	How would you validate login when UI is unchanged?
+•	If API access is not available and only UI testing is allowed:
+o	Would you modify existing UI test cases?
+o	Would you add any new UI scenarios?
+o	Why or why not?
+________________________________________
+3️⃣ Software Testing Life Cycle (STLC)
+•	What are the phases of STLC?
+o	Follow-up:
+	What activities are performed in each phase?
+	What documents are created in Test Planning and Test Closure?
+Exit Criteria
+•	What is an Exit Strategy / Exit Criteria?
+o	Follow-up:
+	Can a release happen with open defects?
+	What kind of defects are acceptable?
+________________________________________
+4️⃣ Defect Management
+•	What is Defect Leakage?
+•	What is Defect Release?
+o	Follow-up:
+	Have you ever released with known defects?
+	How do you handle stakeholder communication in such cases?
+________________________________________
+5️⃣ Requirement Traceability
+•	What is a Requirement Traceability Matrix (RTM)?
+o	Follow-up:
+	Why is RTM important?
+	What does it ensure from a QA perspective?
+________________________________________
+6️⃣ API Fundamentals
+•	Explain API in simple terms.
+•	Difference between PUT and PATCH?
+•	Difference between GET and POST?
+o	Follow-up:
+	Can POST behave like GET?
+	Have you seen such a scenario in real projects?
+________________________________________
+7️⃣ Core Java Concepts
+OOPs
+•	What are the four pillars of OOP?
+o	Follow-up:
+	Explain Encapsulation with example
+	Explain Polymorphism (compile-time vs runtime)
+•	How can you prevent a class from being inherited?
+•	What are static classes / static blocks used for?
+Java Utilities
+•	Difference between Comparable and Comparator?
+o	Follow-up:
+	Where can Comparator be used?
+	Can Comparable be applied to objects?
+•	Difference between String, StringBuilder, and StringBuffer?
+o	Follow-up:
+	Why are Strings immutable?
+	Which one is thread-safe?
+________________________________________
+8️⃣ Multithreading & Parallel Execution
+•	If a function fails during parallel execution, how would you make it thread-safe?
+o	Follow-up:
+	How does ThreadLocal help WebDriver?
+	Can synchronized keyword solve it?
+	Have you used Lock mechanisms?
+	What are limitations of synchronized methods?
+________________________________________
+9️⃣ SQL & Database Queries
+Query-Based Questions
+•	Find the third highest salary from an employee table.
+o	Follow-up:
+	How to fetch the employee name along with salary?
+	Why MAX(name), salary does not work?
+Joins & Grouping
+•	Two tables: Employee (id, name) and City (id, city)
+o	Query 1:
+	Count number of employees per city
+o	Query 2:
+	Count how many employees named “Jatin” exist per city
+o	Follow-up:
+	Correct usage of JOIN, GROUP BY, WHERE clause
+________________________________________
+🔹 CODING QUESTIONS (Explicit)
+Java Coding
+1.	Given a string, print each character with its occurrence count
+o	Follow-up:
+	Why LinkedHashMap was used?
+	Purpose of getOrDefault()
+2.	Create a Person class (name, id, salary)
+o	Store objects in a list
+o	Sort list based on id
+o	Follow-up:
+	Why Comparator is required?
+	Difference between Comparator vs Comparable
+________________________________________
+🔹 PRACTICAL / HANDS-ON QUESTIONS
+Selenium Automation
+•	Read browser type from properties file and launch browser dynamically
+o	Follow-up:
+	Which WebDriver class is used for Edge?
+•	Fetch all links from a webpage
+o	Print only links containing specific text in URL (href)
+o	Follow-up:
+	Difference between getText() and getAttribute("href")
+Window & Tab Handling
+•	Given multiple browser tabs:
+o	Fetch session IDs of tabs containing specific text
+o	Follow-up:
+	How to switch between tabs?
+	Why parent window reference is needed?
+________________________________________
+10️⃣ Automation Frameworks
+TestNG
+•	Difference between TestNG and Cucumber
+•	Execute a test 3 times
+o	Follow-up:
+	Using invocationCount
+•	Retry failed test cases
+o	Follow-up:
+	IRetryAnalyzer usage
+•	Execute test with multiple datasets
+o	Follow-up:
+	DataProvider implementation
+•	Skip test execution
+o	Follow-up:
+	enabled=false
+	Groups and exclusions
+•	Execution order with priorities
+o	Follow-up:
+	Same priority
+	Negative priority
+
+11️⃣ Cucumber (BDD)
+•	What are Hooks?
+o	Follow-up:
+	Purpose of @Before and @After
+•	What is Background?
+•	Difference between Scenario and Scenario Outline
+o	Follow-up:
+	How to run scenario with multiple datasets?
+
+
+-------------------------------------------------------
+1. Candidate Introduction & Project Overview
+•	Can you explain your current role and responsibilities?
+•	What type of testing are you involved in (manual vs automation)?
+•	Which domain and product are you currently working on?
+•	What tools and technologies are you using in your project?
+o	Follow-up:
+	Which automation tool are you using?
+	Which programming language do you use for automation?
+	Which build, version control, and test management tools do you use?
+	What Agile practices do you follow?
+
+________________________________________
+2. Java – OOPs Fundamentals
+•	What are the basic OOPs concepts in Java?
+o	Follow-up:
+	Explain inheritance.
+	Explain abstraction.
+	Explain polymorphism.
+	Explain encapsulation.
+•	What is the benefit of inheritance?
+•	What are method overloading and method overriding?
+
+________________________________________
+3. Method Overloading vs Overriding (Scenario-Based)
+•	If two methods have the same name and parameters but different return types, is it overloading or overriding?
+o	Follow-up:
+	Does return type alone differentiate method overloading?
+	Can method signature be considered same if return type differs?
+	Is overriding possible with only return type change?
+
+________________________________________
+4. Java – Static Block
+•	What is a static block in Java?
+o	Follow-up:
+	When does the static block get executed?
+	Can static blocks exist at method level or only class level?
+	What kind of code is typically written inside static blocks?
+
+________________________________________
+5. Abstract Class vs Interface
+•	What is an abstract class?
+•	What is an interface?
+•	What are the differences between an abstract class and an interface?
+o	Follow-up:
+	Can abstract classes have implemented methods?
+	What type of methods can exist in an abstract class?
+	What access modifiers apply to interface methods and variables?
+
+________________________________________
+6. Java 8 – Default Methods in Interface
+•	Have you heard about default methods in interfaces?
+o	Follow-up:
+	What change was introduced in Java 8 related to interfaces?
+	Do default methods contain implementation?
+	Are default methods related to access modifiers or method body?
+
+________________________________________
+7. Exception Handling in Java
+•	Can we have a try block inside another try block?
+o	Follow-up:
+	Is nested try block allowed?
+	What is the correct usage of nested try-catch?
+•	Can we have multiple catch blocks?
+o	Follow-up:
+	How does Java decide which catch block to execute?
+	What happens if a parent exception is caught first?
+
+________________________________________
+8. Java – Lambda Expressions
+•	What are lambda expressions in Java?
+
+________________________________________
+9. Java Coding Question (Hands-on)
+•	Write a Java program to find the first non-repeating character in a given string.
+o	Follow-up:
+	What should be the output if all characters are repeating?
+	Can you test your logic with multiple inputs?
+	How would you optimize this solution?
+	What data structures can be used for this problem?
+
+________________________________________
+10. Selenium – Exception Handling
+•	What is a StaleElementReferenceException in Selenium?
+o	Follow-up:
+	When does this exception occur?
+	Is dynamic XPath the only solution?
+	What other approaches can be used to handle this exception?
+
+________________________________________
+11. Selenium – Retry Mechanism
+•	How can retry logic be implemented in Selenium?
+o	Follow-up:
+	Is there any built-in Selenium utility for retry?
+	How do TestNG IRetryAnalyzer and listeners work?
+	What is invocationCount and when should it be used?
+
+________________________________________
+12. Selenium – Wait Mechanisms
+•	What are the different types of waits in Selenium?
+o	Follow-up:
+	Difference between implicit and explicit wait?
+	What is fluent wait?
+	How does polling interval work?
+	Can exceptions be ignored in fluent wait?
+
+________________________________________
+13. Selenium 4 – WebDriver Management
+•	How does Selenium handle browser-driver compatibility?
+o	Follow-up:
+	How was driver management handled in Selenium 3?
+	What improvement was introduced in Selenium 4?
+	Is any extra Maven dependency required for this feature?
+
+________________________________________
+14. Selenium – Multiple Windows Handling
+•	How do you handle multiple windows or tabs in Selenium?
+o	Follow-up:
+	What is getWindowHandles()?
+	How do you switch between windows?
+	How do you identify the correct window to switch to?
+
+________________________________________
+15. AI Tools – GitHub Copilot
+•	Have you used GitHub Copilot?
+o	Follow-up:
+	Is it organization-provided or personal?
+	How does Copilot help in code optimization?
+	Are you aware of different Copilot modes (Ask, Agent)?
+
+________________________________________
+16. AI Concepts – RAG
+•	Have you heard about RAG (Retrieval Augmented Generation)?
+o	Follow-up:
+	What problem does RAG solve?
+	How is it different from a standard LLM response?
+
+
+
+1. Java code to find the second largest element in an array
+2. Java code to check both strings are anagrams
+3. Framework expalaination
+4. Find the Locator of nav bar in first cry application. 
+5. API code to find the value from request body
+6. if string str1 = “Hello” str2 = “hello”
+If (str1 == str2)
+What will be the output 
+
+If (str1.equals(str2)) what will be the output 
+
+7. If I want to run my test with threads with different browsers how this can be configured. 
+
+8. How playwright is differ from cypress 
+9. How you can troubleshoot if tests are running fine on local But failing in build
+10. what is the main usage of reporting in framework why it is necessary?
+find Second Highest Number in a array..
+Input--> [10, 40, 30, 20, 50]
+Output--> 40
+ 
+string s1="Race" String s2="care"
+ 
+//div[@class="all-category-container"]//ul[@class="col-one"]//a[@title="Shop By Category"]
+ 
+{
+  "employees": [
+    { "id": 1, "name": "John", "address": { "city": "Delhi", "zip": 110001 }},
+    { "id": 2, "name": "Amit", "address": { "city": "Mumbai", "zip": 400001 }}
+  ]
+}
+fetch city of 2nd employee:   
+ 
+HashMap<String,int> map = new HashMap<String,int>();
+map.put("test1",1)
+map.put("test2",2)
+map.put("test3",3)
+map.put("test1",3)
+ 
+map.get("test1")
+What will be the output?
+ 
+String s1 = "Hello";
+String s2 = "Hello";
+System.out.println(s1 == s2);
+ 
+ 
+ 
+String s3 = new String("Hello");
+System.out.println(s1 == s3);
+System.out.println(s1.equals(s3));
+ 
+
+
+ 
+Oops concept
+overloading
+overriding
+can we override constructor
+can we override static methods
+what single ton class
+Enum single ton class
+api response code 401.404,
+how to handle json data
+how to fetch specific value in json
+xpath for MakeMyTrip
+diff bet xpath and css
+which is fast and diff between xpath or css
+more use of which path
+2 program
+1.int [] arr={5,2,5,5,9,9,7} distint array and find the 3rd largest number
+2. string="automationus" find the 1st non repeat char in string o/p =m
+How you will run an automation in pipeline
+
+What are the key differences between WebdriverIO and Playwright, and when would you choose one over the other?
+
+What API testing capabilities does Playwright provide, and which libraries or features do you use for API testing in Playwright?
+
+In your automation framework, do you use plain Playwright test methods or any wrapper frameworks like Cucumber to make test cases more readable? Why?
+
+How do you integrate Cucumber with Playwright?
+
+What is the basic syntax of Cucumber (Feature, Scenario, Given–When–Then)?
+
+What is the difference between a Scenario and a Scenario Outline in Cucumber, and when would you use each?
+
+How do you find duplicate elements in a JavaScript array?
+
+How would you remove duplicate values from an array and return only unique values (for example, [7, 8, 9, 9, 2, 1])?
+
+Can you write the complete JavaScript code to remove duplicate values and explain it?
+
+What is the difference between == and === in JavaScript, and why is === preferred?
+
+What is the difference between implicit wait and explicit wait?
+
+In real automation scenarios, where and why would you use explicit waits?
+
+Given the API https://meowfacts.herokuapp.com
+, what functional test scenarios would you write, including query parameters like count?
+
+What are the positive and negative functional test scenarios for this API?
+
+If the API has no limit on the count parameter, how would you test that scenario?
+
+Can you list three negative test cases for this API?
+
+How do you set up Playwright automation on AWS EC2 using Jenkins?
+
+How do you integrate Allure Reporter with Playwright?
+
+How does the Playwright HTML reporter work, and when would you use it?
+
+How do you integrate Slack notifications with Jenkins for automation results?
+
+How do you track and manage failed and flaky tests in Playwright, and what is an acceptable maintenance percentage?
+
+On average, what is your automation pass rate across multiple test cycles?
+
+How do server-side hooks or backend issues cause automation flakiness, and how do you handle it?
+
+What is polymorphism, and can you give a Playwright JavaScript example?
+
+What is the difference between compile-time polymorphism and run-time polymorphism?
+
+What is the difference between method overloading and method overriding?
+
+Can we override a static method? Why or why not?
+
+Can a method be overloaded by changing only the return type? Explain why.
+
+What is a Singleton class, and why is it useful?
+
+Can you explain a realistic Singleton use case from an automation framework?
+
+Explain the Josephus problem (100 people in a circle). How does the algorithm work, and how is the formula derived?
+
+Can you explain the Josephus problem in Hinglish in a simple way?
+
+In the rupees–paisa puzzle, how do you determine X and Y when the cashier swaps rupees and paisa and you end up with double the money after spending 20 paisa?
+
+Can you explain the rupees–paisa puzzle in Hinglish, step by step?
+
+What is data-driven testing, and how do you implement it in Playwright?
+
+How does the Josephus algorithm mathematically guarantee correctness?
+

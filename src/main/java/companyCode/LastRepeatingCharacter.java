@@ -8,7 +8,7 @@ public class LastRepeatingCharacter {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		String str = "abcaad";
+		String str = "abcaadd";
 		char s = lastRepeatingCharacter(str);
 		System.out.println(s);
 	}

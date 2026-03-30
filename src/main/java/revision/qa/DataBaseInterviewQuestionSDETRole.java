@@ -39,7 +39,6 @@ package revision.qa;
 
 	            // ----------------------------------------------------------------
 	            // 2. Declare JDBC URL for MySQL database connection
-	            // NOTE: &amp; must be replaced with & in real code
 	            // ----------------------------------------------------------------
 	            String url = "jdbc:mysql://localhost:3306/Business"
 	                       + "?useSSL=false"

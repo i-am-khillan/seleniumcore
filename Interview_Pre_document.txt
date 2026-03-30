@@ -1,0 +1,272 @@
+Hi, my name is Khillan Verma. I’m an SDET with hands-on experience in both UI automation and API automation,
+
+ primarily using Selenium WebDriver, Java, TestNG, REST Assured, and automation frameworks designed for scalable execution.
+In my current role as a Software Tester, 
+I work closely with developers, product owners, and DevOps teams to ensure quality across the entire SDLC.
+
+ I design and develop automation scripts, create reusable components, and improve overall framework stability.
+ My expertise includes functional testing, API testing, automation framework development, data-driven
+ and hybrid testing, CI/CD integration, and resolving flakiness through better wait strategies and architectural improvements.
+On the API side, I work extensively with REST Assured, token handling, schema validation, response time optimization,
+ and creating robust polling mechanisms for async APIs. On the UI side, I implement Page Object Models,
+ custom waits, parallel execution using TestNG, and maintain reliable test suites integrated into Jenkins or GitHub Actions.
+
+I also take ownership of debugging issues, analyzing failures, maintaining test data, and collaborating with developers on root-cause analysis.
+ My focus is always on improving automation coverage, reducing execution time, 
+ and ensuring the tests are maintainable, scalable, and aligned with business priorities.
+Overall, I consider myself a quality advocate with strong analytical thinking, 
+and I enjoy solving problems, optimizing automation, and contributing to reliable releases.
+
+
+Key Resposibilities As SDET:
+
+1. Test automation development - 
+Designing and developing automated test frameworks in Java
+Building scalable, reusable, maintainable automation architecture (POM, Hybrid, BDD, Data‑Driven etc.).
+Automating UI, API, Database, Performance and Integration test cases.
+
+2.Strong Coding + Testing Skills-
+Writing high‑quality, clean, modular automation code following OOP concepts.
+Performing code reviews, refactoring automation modules, and optimizing test suites.
+Debugging complex test failures using logs, exceptions, and system traces
+
+3.Requirement Analysis & Test Strategy-
+Understanding functional/non‑functional requirements.
+Designing Test Strategy, Test Plan, Test Scenarios & Test Cases.
+Identifying automation feasibility and picking high‑ROI test cases.
+
+4.CI/CD Pipeline Integration-
+Integrating test automation with CI/CD tools like Jenkins, jenkins pipeline,github,git command
+Setting up nightly builds, regression execution, and automated reporting.
+Ensuring quality gates are met before production deployment.
+
+5.API Testing & Validation
+Testing REST and SOAP APIs using Postman, Rest Assured
+Validating JSON/XML responses, schema validation, and API workflows.
+Automating end‑to‑end service-level test suites.
+
+6.Performance & Load Testing-
+Running performance tests using JMeter, Gatling, Locust.
+Identifying bottlenecks, analyzing throughput, latency, and error rates.
+Working with DevOps to tune system performance
+
+7. Bug Identification & Analysis-
+Logging detailed defects with logs, screenshots, and reproduction steps.
+Working with developers to reproduce, debug, and fix critical issues.
+Ensuring bug fixes are covered in regression automation.
+
+8.Continuous Quality Monitoring
+Monitoring builds, automation execution, KPIs, code coverage, and reliability.
+Maintaining dashboards using Allure, Extent Reports, Grafana, Kibana.
+Implementing flaky test detection & stabilization.
+
+9 .Test Environment Management-
+Working with DevOps to maintain test environments.
+Using Docker/Kubernetes for test environment setup.
+Creating containers for Selenium Grid, APIs, databases, mock servers.
+
+10-Security & Reliability Testing
+Basic vulnerability checks (OWASP top 10).
+API authentication/authorization testing (OAuth2.0, JWT).
+Ensuring test data security and compliance.
+
+11.
+Collaborating with Cross‑Functional Teams
+Working closely with developers, DevOps, Product Owners, BAs.
+Participating in Agile ceremonies: Sprint Planning, Grooming, Retrospective.
+Helping improve product quality from early stages.
+
+12 AI‑Driven Testing (Modern SDET Role – 2025‑2026 Trend)
+Implementing self‑healing locators and AI‑driven automation.
+Using AI tools for:
+Test case generation
+Intelligent locator selection
+Visual testing (OCR, screenshot diff)
+Flaky test prediction
+
+Integrating AI testing tools (Testim, Mabl, Katalon AI, Pihu AI).
+
+
+
+---------------------------------------------\\-----------------------
+1.Daily Stand‑up / Scrum Call
+
+Discuss yesterday’s work, today’s plan, and blockers.
+Sync with Developers, Product Owners, and Scrum Master.
+Give status on automation, defects, and test coverage.
+
+2.Reviewing User Stories / Acceptance Criteria
+
+Analyze new features and requirements.
+Identify test scenarios & edge cases.
+Make sure acceptance criteria are clear and testable.
+Decide what can be automated and what needs manual checks.
+
+Writing & Updating Test Cases
+
+Write functional, regression, and integration test cases.
+Update outdated cases based on new changes.
+Mark test cases for automation based on ROI.
+
+
+🔹 4. Developing and Maintaining Automation Scripts
+
+Create new automated test scripts (UI/API/DB).
+Update existing scripts after UI/API changes.
+Refactor flaky tests and improve stability.
+Implement self-healing locators if applicable.
+
+Tools used:
+Java, Selenium, TestNG, JUnit, RestAssured, Postman, Maven, Cucumber, Playwright
+
+🔹 5. Running Automation Suites
+
+Execute smoke, regression, and sanity suites.
+Run tests locally and on CI systems like Jenkins.
+Observe failures, analyze logs, screenshots, reports.
+
+
+🔹 6. API Testing
+
+Validate REST/SOAP endpoints.
+Check request/response, status codes, headers.
+Run collections in Postman / automate using Rest Assured.
+
+
+🔹 7. Debugging & Root Cause Analysis
+
+Identify if failure is:
+
+Automation bug
+Application bug
+Test data issue
+Environment issue
+
+
+Fix test script bugs.
+Work with developers for application bugs.
+
+
+🔹 8. Logging Defects
+
+Raise defects with clear steps, logs, screenshots, request/response payloads.
+Ensure proper severity/priority.
+Retest fixes once dev team resolves them.
+
+
+🔹 9. Code Review & Collaboration
+
+Participate in peer code reviews of test code.
+Review pull requests (GitHub/GitLab/Bitbucket).
+Follow coding standards and best practices.
+
+
+🔹 10. CI/CD Pipeline Activities
+
+Monitor nightly regression runs on Jenkins.
+Fix broken pipelines.
+Add new test suites to Jenkins.
+Update build triggers (e.g., on each commit, nightly, sprint builds).
+
+
+🔹 11. Working with Test Environments
+
+Coordinate with DevOps for environment availability.
+Manage test data (DB inserts, mock data, JSON files).
+Use Docker to run services locally:
+
+Databases
+Mock servers
+Selenium Grid
+APIs
+
+
+
+
+🔹 12. Performance/Load Testing (if applicable)
+
+Use JMeter/Gatling to check performance.
+Validate response times, throughput, and stress scenarios.
+
+
+🔹 13. Reporting and Documentation
+
+Share daily QA status to team.
+Update Confluence/ Jira with:
+
+Test coverage
+Automation progress
+Execution summary
+Defect reports
+
+
+
+https://www.udemy.com/course/sdettraining-testarchitect-fullstackqa/learn/lecture/14445270#overview
+https://www.udemy.com/course/sdettraining-testarchitect-fullstackqa/learn/lecture/14502314#overview
+
+
+https://app.box.com/notes/1380968082445?s=z1jscs402bmqadljajx0fmidnij8s6cd
+https://app.box.com/file/2129225331998
+https://app.box.com/file/2126078464680
+https://app.box.com/file/2126092442211
+
+🔹 14. Continuous Learning / Team Improvement
+
+Stay up to date with latest automation tools.
+Improve test framework architecture.
+Add utilities, wrappers, and reusable components.
+
+As an SDET, my daily activities include reviewing user stories,
+identifying test scenarios, and deciding what should be automated.
+ I develop and maintain automation scripts using Java, Selenium, TestNG, and Rest Assured.
+ I run smoke and regression suites daily, analyze failures, fix automation issues, and log application defects.
+ I actively participate in daily stand‑ups, code reviews, and collaborate with developers for root-cause analysis.
+ I work with Jenkins for CI/CD integration, monitor nightly runs, and maintain test data and environments, often using Docker.
+ I document test results, update Jira, and continuously improve the automation framework to increase coverage and stability.
+ 
+ 
+ ----------------------------------------//---------------------------------------
+ 4. write the code for automation to select the google search and type DEL and select on of them
+
+WebDriver driver=new ChromeDriver();
+
+driver.get("https//www.google.com");
+
+driver.findElement(By.xpath("//q")).click();
+
+List<WebElement> links=driver.findElements(By.xpath("ul/li"));
+
+for(WebElement e: links){
+	String text=e.getText();
+	
+	if(text.equalTo("DELET"){
+	
+		e.click();
+		break;
+	}
+}
+ 
+ 
+----------------------------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

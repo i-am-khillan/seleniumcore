@@ -7,6 +7,7 @@ import java.util.List;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.ElementClickInterceptedException;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -39,6 +40,11 @@ private void nullBlackCheck(String value) {
 		}
 	}
 
+public void scrollIntoView(WebElement element) {
+	JavascriptExecutor js = (JavascriptExecutor) driver;
+	js.executeScript("argument[0].scrollIntoView(true);", element);
+
+}
 	public WebElement getElement(By locator) {
 		WebElement element = null;
 		try {

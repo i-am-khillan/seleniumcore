@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testngConcept.GoogleTest">
+      <class name="March62026_Prep_infosys.DataProviderTest">
         <methods>
-          <include name="setup"/>
-          <include name="testDown"/>
-          <include name="urlTest"/>
+          <include name="testData"/>
         </methods>
-      </class> <!-- testngConcept.GoogleTest -->
+      </class> <!-- March62026_Prep_infosys.DataProviderTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

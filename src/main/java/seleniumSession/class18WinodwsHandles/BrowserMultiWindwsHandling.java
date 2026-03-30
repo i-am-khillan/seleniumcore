@@ -34,7 +34,7 @@ public class BrowserMultiWindwsHandling {
 		Iterator<String> it = handles.iterator(); // not maintain the order
 
 		while (it.hasNext()) {
-
+			
 			String WindowId = it.next();
 			driver.switchTo().window(WindowId);
 			System.out.println("window id :" + driver.getCurrentUrl());
